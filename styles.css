@@ -1,0 +1,529 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #0a5c36;
+    color: #fff;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%230a5c36" width="100" height="100"/><path fill="%230d7a46" d="M0 0h50v50H0z"/></svg>');
+    min-height: 100vh;
+}
+
+
+.logo h1, .hero h2, .carta-section h2, .sobre-section h2, .contato-section h2 {
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+nav a, .btn, .form-group label, .contato-info h3, .contato-form h3, .footer-links a {
+    font-family: 'Dancing Script', cursive;
+}
+
+.hero p, .sobre-text p, .contato-item p, .footer-bottom p, .modal-content p {
+    font-family: 'Playfair Display', serif;
+}
+
+.address p {
+    font-family: 'Great Vibes', cursive;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+header {
+    background-color: #b30000;
+    padding: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    font-size: 2.5rem;
+    color: #ffcc00;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffcc00;
+    color: #b30000;
+    transform: translateY(-2px);
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"><rect fill="%230d7a46" width="400" height="300"/><circle fill="%23ffcc00" cx="200" cy="150" r="80"/><polygon fill="%23b30000" points="200,50 230,120 300,120 240,160 260,230 200,190 140,230 160,160 100,120 170,120"/></svg>');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    max-width: 700px;
+    margin: 0 auto 35px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #b30000;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: #ffdd44;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.carta-section {
+    padding: 90px 0;
+    background-color: #0d7a46;
+}
+
+.carta-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.carta-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.carta-form {
+    flex: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #fff;
+    font-family: 'Playfair Display', serif;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.3);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.carta-preview {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.envelope {
+    width: 320px;
+    height: 220px;
+    perspective: 1000px;
+}
+
+.envelope-front {
+    width: 100%;
+    height: 100%;
+    background-color: #b30000;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border: 2px solid #ffcc00;
+}
+
+.stamp {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+}
+
+.address {
+    text-align: center;
+    color: #fff;
+}
+
+.address p {
+    margin: 8px 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.sobre-section {
+    padding: 90px 0;
+    background-color: #0a5c36;
+}
+
+.sobre-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.sobre-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.sobre-text {
+    flex: 2;
+}
+
+.sobre-text p {
+    margin-bottom: 25px;
+    line-height: 1.7;
+    font-size: 1.2rem;
+}
+
+.sobre-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.elf-image {
+    font-size: 12rem;
+    animation: bounce 2s infinite;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+
+.contato-section {
+    padding: 90px 0;
+    background-color: #0d7a46;
+}
+
+.contato-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.contato-content {
+    display: flex;
+    gap: 50px;
+}
+
+.contato-info {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 35px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.contato-info h3 {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contato-icon {
+    font-size: 1.8rem;
+    margin-right: 20px;
+}
+
+.contato-item p {
+    font-size: 1.1rem;
+}
+
+.contato-form {
+    flex: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 35px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.contato-form h3 {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+footer {
+    background-color: #0a3d27;
+    padding: 50px 0 25px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo h3 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #0d7a46;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 550px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border: 3px solid #ffcc00;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ffcc00;
+}
+
+.modal-content h2 {
+    margin-bottom: 25px;
+    color: #ffcc00;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav ul {
+        gap: 15px;
+    }
+    
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    .carta-container {
+        flex-direction: column;
+    }
+    
+    .sobre-content {
+        flex-direction: column;
+    }
+    
+    .contato-content {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .elf-image {
+        font-size: 8rem;
+    }
+    
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav a {
+        font-size: 1.2rem;
+    }
+}

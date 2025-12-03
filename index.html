@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natal Encantado - Cartas para o Papai Noel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Great+Vibes&family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🎅</span>
+                    <h1>Natal Encantado</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#carta">Enviar Carta</a></li>
+                        <li><a href="#sobre">Quem Somos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Escreva sua carta para o Papai Noel!</h2>
+            <p>Conte seus desejos e sonhos para o bom velhinho. Ele está ansioso para ler sua cartinha!</p>
+            <a href="#carta" class="btn">Escrever Carta</a>
+        </div>
+    </section>
+    <section id="carta" class="carta-section">
+        <div class="container">
+            <h2>Envie sua carta para o Papai Noel</h2>
+            <div class="carta-container">
+                <div class="carta-form">
+                    <form id="carta-form">
+                        <div class="form-group">
+                            <label for="nome">Seu Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="idade">Sua Idade:</label>
+                            <input type="number" id="idade" name="idade" min="1" max="120" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cidade">Sua Cidade:</label>
+                            <input type="text" id="cidade" name="cidade" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comportamento">Como você se comportou este ano?</label>
+                            <select id="comportamento" name="comportamento" required>
+                                <option value="">Selecione</option>
+                                <option value="muito-bom">Muito Bom</option>
+                                <option value="bom">Bom</option>
+                                <option value="mais-ou-menos">Mais ou Menos</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="presentes">Quais presentes você gostaria de receber?</label>
+                            <textarea id="presentes" name="presentes" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem especial para o Papai Noel:</label>
+                            <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Carta</button>
+                    </form>
+                </div>
+                <div class="carta-preview">
+                    <div class="envelope">
+                        <div class="envelope-front">
+                            <div class="stamp">🎅</div>
+                            <div class="address">
+                                <p>Para: Papai Noel</p>
+                                <p>Polo Norte</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Quem Somos -->
+    <section id="sobre" class="sobre-section">
+        <div class="container">
+            <h2>Quem Somos</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>Somos uma equipe de elfos digitais dedicados a garantir que todas as cartinhas enviadas ao Papai Noel cheguem em segurança ao Polo Norte.</p>
+                    <p>Nossa missão é manter viva a magia do Natal, conectando crianças e adultos ao bom velhinho através de mensagens cheias de amor e esperança.</p>
+                    <p>Desde 1980, temos ajudado o Papai Noel a gerenciar as milhões de cartas que recebe todos os anos, garantindo que nenhum pedido se perca!</p>
+                </div>
+                <div class="sobre-image">
+                    <div class="elf-image">🧝</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contato-section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contato-item">
+                        <span class="contato-icon">📧</span>
+                        <p>contato@natalencantado.com</p>
+                    </div>
+                    <div class="contato-item">
+                        <span class="contato-icon">📞</span>
+                        <p>(45) 3456-7890</p>
+                    </div>
+                    <div class="contato-item">
+                        <span class="contato-icon">📍</span>
+                        <p>Rua das Neves, 123 - Vila Natal</p>
+                    </div>
+                </div>
+                <div class="contato-form">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="contato-form">
+                        <div class="form-group">
+                            <label for="contato-nome">Nome:</label>
+                            <input type="text" id="contato-nome" name="contato-nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contato-email">E-mail:</label>
+                            <input type="email" id="contato-email" name="contato-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contato-assunto">Assunto:</label>
+                            <input type="text" id="contato-assunto" name="contato-assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contato-mensagem">Mensagem:</label>
+                            <textarea id="contato-mensagem" name="contato-mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🎅</span>
+                    <h3>Natal Encantado</h3>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#carta">Enviar Carta</a>
+                    <a href="#sobre">Quem Somos</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                <div class="footer-social">
+                    <span>Siga-nos:</span>
+                    <div class="social-icons">
+                        <a href="#">📘</a>
+                        <a href="#">📷</a>
+                        <a href="#">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Natal Encantado. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Confirmação -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carta Enviada! 🎉</h2>
+            <p>Sua carta foi enviada com sucesso para o Papai Noel!</p>
+            <p>Ele ficou muito feliz em receber sua mensagem e prometeu ler pessoalmente.</p>
+            <p>Continue sendo uma criança especial e não esqueça de deixar biscoitos para ele na noite de Natal!</p>
+            <button id="modal-close" class="btn">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
